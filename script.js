@@ -20,10 +20,11 @@ function createGrid(size) {
     for(let col=0; col<size; col++){
       let cell = document.createElement('div');
       cell.className = 'cell';
+      cell.style.backgroundColor = 'white';
       cell.style.display = 'inline-block';
       cell.style.width = cellSize-2 + 'px';
       cell.style.height = cellSize-2 + 'px';
-      cell.style.border = '1px solid black';
+      cell.style.border = '1px solid #d8d8d8';
       cell.style.margin = '0';
       cell.style.float = 'left';
       r.appendChild(cell);
@@ -51,7 +52,6 @@ function changeGrid() {
   size = prompt("What size grid would you like?");
   createGrid(size);
 }
-
 
 function changeColor() {
   this.style.background = 'black';

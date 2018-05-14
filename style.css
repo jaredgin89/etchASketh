@@ -1,12 +1,59 @@
+body {
+  background-image: url("background.png");
+}
 .menu {
   text-align: center;
+  color: white;
+}
+.board {
+  display: inline-block;
+  margin: 30px auto 0px auto;
+  vertical-align: top;
+  width: 800px;
+  height: 800px;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 25px;
 }
 #title {
   font-size: 300%;
   text-decoration: underline;
 }
 #container {
-  margin: 20px auto;
+  margin: 10px 100px 20px 100px;
   width: 600px;
   height: 600px;
+  border: 1px solid black;
+}
+.name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 300%;
+  color: #f2f24d;
+  margin: 25px 0px 0px 0px;
+  text-align: center;
+  text-shadow: 1px 1px black;
+}
+.knobs {
+  display: inline;
+}
+#leftknob, #rightknob {
+  background-color: black;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: 3px 2px #141414;
+}
+#leftknob {
+  float: left;
+  margin-left: 30px;
+}
+#rightknob {
+  float: right;
+  margin-right: 30px;
+}
+#creator {
+  color: white;
+  margin-top: 30px;
+  font-size: 80%;
 }

@@ -4,6 +4,7 @@
 <head>
   <title>Etch-A-Sketch</title>
   <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 </head>
 
 <body>
@@ -11,7 +12,6 @@
 <!-- Title heading and buttons -->
   <div class="menu">
     <h1 id="title">Etch-A-Sketch</h1>
-    <h3>Click reset to change grid size!</h3>
     <div class="input">
       <button class="changeSize">Change Size</button>
       <button class="clearGrid">Clear Grid</button>
@@ -19,7 +19,18 @@
   </div>
 
 <!-- Container used to hold the grid -->
-  <div id="container"></div>
+  <div class="board">
+    <div class="name">Etch-A-Sketch</div>
+    <div id="container"></div>
+    <div class="knobs">
+      <div id="leftknob"></div>
+      <div id="rightknob"></div>
+    </div>
+  </div>
+
+  <div id="creator">
+    Created by: Jared Gingerich
+  </div>
 
   <script src="script.js"></script>
 </body>
