@@ -33,6 +33,8 @@ function createGrid(size) {
   }
 }
 
+//resetGrid deletes all children from container div and creates a grid of
+//the same deault size.
 function resetGrid() {
   while(container.hasChildNodes()) {
     container.removeChild(container.lastChild);
@@ -40,8 +42,8 @@ function resetGrid() {
   createGrid(size);
 }
 
-//resetGrid deletes all children from container div and prompts the user  //
-//to enter the grid size they want.
+//Change grid delets all children from container and creates a new Grid
+//of a size input by user.
 function changeGrid() {
   while(container.hasChildNodes()){
     container.removeChild(container.lastChild);
