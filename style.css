@@ -6,7 +6,7 @@ body {
   color: white;
 }
 .board {
-  display: inline-block;
+  text-align: center;
   margin: 30px auto 0px auto;
   vertical-align: top;
   width: 800px;
